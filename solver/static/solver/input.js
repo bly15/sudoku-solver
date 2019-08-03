@@ -4,7 +4,11 @@ window.onload = function() {
     });
 }
 
-// Restricts input for the given textbox to the given inputFilter
+/**
+ * Restricts input for the given textbox to the given inputFilter
+ * @param {textbox} textbox HTML input form
+ * @param {input} inputFilter User input to HTML input form
+ */
 function setInputFilter(textbox, inputFilter) {
     ["input", "keydown", "keyup", "mousedown", "mouseup", "select", "contextmenu", "drop"].forEach(function(event) {
         textbox.addEventListener(event, function() {

@@ -4,112 +4,119 @@
         <title>Sudoku Solver</title>
 
         {% load staticfiles %}
+        <link rel="stylesheet" type="text/css" href="{% static 'solver/normalize.css' %}"/>
         <link rel="stylesheet" type="text/css" href="{% static 'solver/style.css' %}"/>
         <script type="text/javascript" src="{% static 'solver/input.js' %}"></script>
     </head>
 
     <body>
-        <h1>Sudoku Solver</h1> 
-        <table>
-            <tr>
-                <td><input id="intLimit"></td>
-                <td><input id="intLimit" maxlength="1"></td>
-                <td><input id="intLimit" maxlength="1"></td>
-                <td><input id="intLimit" maxlength="1"></td>
-                <td><input id="intLimit" maxlength="1"></td>
-                <td><input id="intLimit" maxlength="1"></td>
-                <td><input id="intLimit" maxlength="1"></td>
-                <td><input id="intLimit" maxlength="1"></td>
-                <td><input id="intLimit" maxlength="1"></td>
-            </tr>
-            <tr>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-            </tr>
-            <tr>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-            </tr>
-            <tr>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-            </tr>
-            <tr>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-            </tr>
-            <tr>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-            </tr>
-            <tr>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-            </tr>
-            <tr>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-            </tr>
-            <tr>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-                <td><input maxlength="1"></td>
-            </tr>
-        </table>
+        <h1 id="header">Sudoku Solver</h1> 
+        <div class="container">
+            <table>
+                <tr>
+                    <td><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td class="rt-bold-border"><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td class="rt-bold-border"><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                </tr>
+                <tr>
+                    <td><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td class="rt-bold-border"><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td class="rt-bold-border"><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                </tr>
+                <tr class="btm-bold-border">
+                    <td><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td class="rt-bold-border"><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td class="rt-bold-border"><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                </tr>
+                <tr>
+                    <td><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td class="rt-bold-border"><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td class="rt-bold-border"><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                </tr>
+                <tr>
+                    <td><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td class="rt-bold-border"><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td class="rt-bold-border"><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                </tr>
+                <tr class="btm-bold-border">
+                    <td><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td class="rt-bold-border"><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td class="rt-bold-border"><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                </tr>
+                <tr>
+                    <td><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td class="rt-bold-border"><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td class="rt-bold-border"><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                </tr>
+                <tr>
+                    <td><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td class="rt-bold-border"><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td class="rt-bold-border"><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                </tr>
+                <tr>
+                    <td><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td class="rt-bold-border"><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td class="rt-bold-border"><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                    <td><input id="intLimit"></td>
+                </tr>
+            </table>
+            <div class="btn-group">
+                <button id="reset">Reset</button>
+                <button id="solve">Solve</button>    
+            </div>
+        </div>
     </body>
 </html>
