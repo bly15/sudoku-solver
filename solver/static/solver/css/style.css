@@ -26,12 +26,14 @@ table {
     background: white;
     border: 4px solid black;
     border-collapse: collapse;
-    margin: 2.5% auto;
+    margin: auto auto 2%;
+    table-layout: fixed;
     width: 45%;
 }
 
 tr {
     border-bottom: 1px solid #cccccc;
+    height: 4vw;
 }
 
 td {
@@ -92,7 +94,7 @@ input {
 }
 
 #solve:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #333333;
-  transform: translateY(4px);
+    background-color: #3e8e41;
+    box-shadow: 0 5px #333333;
+    transform: translateY(4px);
 }
