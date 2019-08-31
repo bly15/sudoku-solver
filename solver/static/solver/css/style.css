@@ -4,7 +4,7 @@
 }
 
 body {
-    background: whitesmoke;
+    background: #fcfcfc;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -39,7 +39,11 @@ tr {
 td {
     border-right: 1px solid #cccccc;
     padding: 1%;
-    transition: all 0.2s;
+    transition: all 0.25s;
+}
+
+td:focus-within {
+    background-color: #f6f3f1;
 }
 
 input {
