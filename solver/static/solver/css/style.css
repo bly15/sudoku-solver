@@ -101,3 +101,17 @@ input {
     box-shadow: 0 5px #333333;
     transform: translateY(4px);
 }
+
+/********** Footer Style **********/
+footer {
+    bottom: 0;
+    color: grey;
+    left: 0;
+    position: fixed;
+    text-align: right;
+    width: 100%;
+}
+
+footer a {
+    color: darkolivegreen;
+}
