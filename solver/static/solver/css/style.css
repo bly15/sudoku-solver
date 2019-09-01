@@ -106,6 +106,7 @@ input {
 footer {
     bottom: 0;
     color: grey;
+    font-size: 0.8em;
     left: 0;
     position: fixed;
     text-align: right;
@@ -115,3 +116,39 @@ footer {
 footer a {
     color: darkolivegreen;
 }
+
+/********** Mobile Devices **********/
+@media only screen and (max-width: 600px) {
+    #header {
+        margin: 18% 1% 5%;
+    }
+
+    #header img {
+        width: 100%;
+    }
+
+    table {
+        margin: auto auto 7%;
+        width: 95%;
+    }
+
+    tr {
+        height: 8vw;
+    }
+}
+
+/********** Tablets **********/
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+    #header {
+        margin: 5% auto 5%;
+    }
+
+    table {
+        margin: auto auto 5%;
+        width: 80%;
+    }
+
+    tr {
+        height: 8vw;
+    }
+} 
