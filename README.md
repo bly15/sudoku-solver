@@ -2,10 +2,10 @@
 https://sudoku-solver-django.herokuapp.com/
 
 ## Start
-![Start app](/images/start.jpg)
+![Start app](/images/start.png)
 
 ## Solve Sudoku puzzle
-![Solve Sudoku puzzle](/images/solve.jpg)
+![Solve Sudoku puzzle](/images/solve.png)
 
 ## Invalid Sudoku puzzle
-![Invalid Sudoku puzzle](/images/invalid.jpg)
+![Invalid Sudoku puzzle](/images/invalid.png)
